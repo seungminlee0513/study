@@ -9,7 +9,7 @@ var users = [
 ]
 ```
 ### MAP
-#### 실제 예시로 코드 구현(user의 age값만 가져오자)
+#### 1. 실제 예시로 코드 구현(user의 age값만 가져오자)
 ```javascript
 var new_list = [];
 var i = 0;
@@ -17,7 +17,7 @@ for(i < users.length; i++) {
   new_list.push(users[i].age)
 }
 ```
-#### 구현한 코드에서 변수 처리(<b>user</b>의 <b>age</b>값만 가져오자)
+#### 2. 구현한 코드에서 변수 처리(<b>user</b>의 <b>age</b>값만 가져오자)
 users는 list로 변경<br>
 age는 함수로 변경
 ```javascript
@@ -32,7 +32,7 @@ function _map(list, iter) {
 
 _map(users, function(val) { return val.age })
 ```
-#### 구현한 코드에 필요한 함수 확인
+#### 3. 구현한 코드에 필요한 함수 확인
 FOR문을 함수로 대체하자
 ```javascript
 function _each(list, iter) {
